@@ -34,35 +34,69 @@
 				color:white;
 			}
 			#maincontent{
-				background-color:#E3E9E9;
-                width:90%;
-				height:300px;
-				margin:2% 5% 2% 5%;
+				background-color:lightgrey;
+                width:85%;
+				margin:2% 10% 2% 5%;
 				border-radius:5px;
+				padding:35px 20px 35px 20px;
 			}
-			#others{
-				background-color:#E3E9E9;
-				display:inline-block;
-				width:90%;
-				height:650px;
+			#maincontentheader{
+				font-size:60px;
+			}
+			#maincontenttext{
+				font-size:20px; 
+			}
+			#maincontentbutton{
+				margin:20px 0px 20px 0px;
+			}
+			#maincontentbutton button{
+				padding:10px;
+				font-size:20px;
+				font-weight:bold;
+				background-color:blue;
+				color:white;
+				border-radius:10px;
+			}
+			#maincontentbutton button:hover{
+				background-color:thick blue;
+			}
+			#mycards{
+				height:90px;
 				margin:2% 5% 2% 5%;
 			}
-			#A,#B,#C,#D{
-                display:inline-block;
-				width: 24%;
-				
+			.mytab{
+                width:23%;
+				margin:0px 5px 0px 5px;
+				border-radius:5px;
+				border:1px solid lightgrey;
+				display: inline-block;
 			}
-			.one,.two,.three {
-				height: 200px;
-				border: 1px solid #000000;
-				margin: 6px;
+			.mytabheader{
+				background-image:url("https://www.google.com/search?q=education+images&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi63cSH-IPjAhW_8HMBHY6RCr8Q_AUIECgB&biw=1440&bih=730#imgrc=_MWElo26Ht3qNM:");
+				height: 150px;;
+			}
+			.mytabcontent{
+				padding: 20px;
+				text-align: center;
+			}
+			.mytabfooter{
+				background-color: lightgrey;
+				text-align: center;
+			}
+			.mytabfooter button{
+				padding:10px;
+				font-size:15px;
+				margin:10px 0px 10px 0px;
+				background-color:blue;
+				color:white;
+				border-radius:10px;
 			}
 		
 		</style>
 	</head>
 	<body>
 		<div id="header">
-		    <div id="logo">Digital Lync</div>
+		    <div id="logo">Start Bootstrap</div>
 		    <div id="navibar">
 			    <div class="naviitem">Home</div>
 			    <div class="naviitem">About</div>
@@ -70,28 +104,41 @@
 			    <div class="naviitem">Contact</div>
 			 </div>
 		</div>	 
-		<div id="maincontent"></div>
-		<div id="others">
-			<div id="A">
-				<div class="one">1</div>
-				<div class="two">2</div>
-				<div class="three">3</div>
-			</div>
-			<div id="B">
-				<div class="one">1</div>
-				<div class="two">2</div>
-				<div class="three">3</div>
-			</div>
-			<div id="C">
-				<div class="one">1</div>
-				<div class="two">2</div>
-				<div class="three">3</div>
-			</div>
-			<div id="D">
-			    <div class="one">1</div>
-				<div class="two">2</div>
-				<div class="three">3</div>
-			</div>
-		</div>	 		 
+		<div id="maincontent">
+			  <div id="maincontentheader">A Warm Welcome!</div>
+			  <div id="maincontenttext">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique 
+				quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.
+			  </div>
+			  <div id="maincontentbutton"><button>Call to action!</button></div>
+		</div>
+		<div>
+		<div id="mycards">
+			<div class="mytab">
+				<div class="mytabheader"></div>
+				<div class="mytabcontent"><h3>Card title</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</div>
+				<div class="mytabfooter"><button>Find out more</button></div>
+			</div>	
+			<div class="mytab">
+				<div class="mytabheader"></div>
+				<div class="mytabcontent"><h3>Card title</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</div>
+				<div class="mytabfooter"><button>Find out more</button></div>	  
+			</div>	
+			<div class="mytab">
+				<div class="mytabheader"></div>
+				<div class="mytabcontent"><h3>Card title</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</div>
+				<div class="mytabfooter"><button>Find out more</button></div>
+			</div>	
+			<div class="mytab">
+				<div class="mytabheader"></div>
+				<div class="mytabcontent"><h3>Card title</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</div>
+				<div class="mytabfooter"><button>Find out more</button></div>
+			</div>	
+		</div>
+	   </div>
 	</body>
 </html>
