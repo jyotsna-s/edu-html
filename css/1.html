@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<style>
+		*{
+			margin:0px;
+		}
+			h1[title]{
+				color:red;
+			}
+			h1[title="apple"]{
+				background-color:green;
+			}
+			h1[title^="a"]{
+				border:2px solid pink;
+			}
+			h1[title$="e"]{
+				font-style:italic;
+			}
+			h1:first-child{
+				text-decoration:underline;
+			}
+			h1:last-child{
+				border:2px solid;
+				border-radius:10px;
+			}
+			h2:first-of-type{
+				background-color:seagreen;
+			}
+			.myblock{
+				background-color:red;
+				width:20%;
+				height:300px;
+				display:inline-block;
+				margin:0px 2%;
+			}
+			.myblock:nth-child(2){
+				margin:0px 2% 0px 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 title="ant">Hello Praveen</h1>
+		<h1 title="apple">Hello DIGITAL </h1>
+		<h1>Hello GUBBALA</h1>
+		<h1 title="b">Hello lYNC</h1>
+		<div>
+			<h2>header 2</h2>
+			<h2>header 2</h2>
+			<p>paragraph</p>
+			<p>paragraph</p>
+		</div>
+		<div>
+			<div class="myblock"></div>
+			<div class="myblock"></div>
+			<div class="myblock"></div>
+			<div class="myblock"></div>
+		</div>
+	</body>
+</html>

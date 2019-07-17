@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        #header {
+            height: 90px;
+            border-top: 4px solid gold;
+            position: fixed;
+            top: 0px;
+            z-index: 999;
+            width: 100%;
+            background-color: white;
+        }
+
+        #logo {
+            float: left;
+            padding: 0px 100px;
+        }
+
+        .digital {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .lync {
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        #navbar {
+            float: right;
+            display: flex;
+            margin: 30px 150px;
+        }
+
+        .navitem {
+            padding: 0px 10px;
+            font-size: 20px;
+        }
+
+        #btn1 {
+            background-color: gold;
+            font-size: 18px;
+            border-radius: 30px;
+            padding: 12px 28px;
+            margin: -10px 30px 0px 0px
+        }
+
+        #banner {
+            background-image: url("https://digital-lync.com/wp-content/uploads/2019/04/bannerImg1.jpg");
+            height: 85vh;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #banner-content {
+            position: relative;
+            top: 30%;
+            left: 10%;
+            font-size: 14px;
+            color: white;
+
+        }
+
+        #btn2 {
+            background-color: gold;
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 20px 35px;
+        }
+
+        #mycards {
+            display: flex;
+            margin: 2% 5% 2% 5%;
+        }
+
+        #mytab #img1 {
+            height: 100px;
+            width: 100px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #mytab {
+            margin: 6px 76px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #mytab img {
+            height: 265px;
+            width: 300px;
+        }
+
+        #mytab button {
+            position: relative;
+            bottom: 20px;
+            left: 10px;
+            padding: 8px 14px;
+            font-size: 15px;
+            z-index: 1;
+        }
+
+        #texthead {
+            text-align: center;
+            margin: 12% 0% 0% 0%;
+        }
+
+        #text {
+            text-align: center;
+        }
+
+        #btn3 button {
+            background-color: gold;
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 20px 35px;
+
+        }
+
+        #texthead1 {
+            color: #023ea6;
+            text-align: center;
+            margin: 5% 0% 0% 0%;
+        }
+
+        #btn4 button {
+            background-color: gold;
+            font-size: 18px;
+            padding: 20px 35px;
+            margin: 0% 0% 0% 10%;
+        }
+
+        #go h1 {
+            float: right;
+            width: 40%;
+            position: absolute;
+            ;
+            top: 370%;
+            right: 10%;
+        }
+
+        #go p {
+            float: right;
+            position: absolute;
+            ;
+            top: 380%;
+            right: 12%;
+            float: right;
+        }
+
+        #content {
+            margin: 10% 0% 0% 10%;
+            width: 30%;
+            display: inline-block;
+        }
+
+        #content h1 {
+            color: #023ea6;
+        }
+
+        #contentimg {
+            width: 40%;
+            position: absolute;
+            ;
+            top: 410%;
+            right: 10%;
+            float: right;
+        }
+
+        #content1 {
+            margin: 25% 0% 0% 10%;
+            width: 40%;
+            display: inline-block;
+        }
+
+        #content1 h1 {
+            color: #023ea6;
+        }
+
+        #contentimg1 {
+            width: 30%;
+            position: absolute;
+            ;
+            top: 520%;
+            right: 10%;
+            float: right;
+        }
+
+        #texthead2 {
+            color: #023ea6;
+            text-align: center;
+            margin: 15% 0% 0% 0%;
+        }
+
+        #texthead3 {
+            color: #023ea6;
+            text-align: center;
+            margin: 10% 0% 0% 0%;
+        }
+
+        #maincontent {
+            background-color: #007bff;
+            ;
+            height: 20%;
+            width: 105%;
+        }
+
+        #texthead4 {
+            color: white;
+            padding: 5px 0% 0% 10%;
+        }
+
+        #text1 {
+            color: white;
+            padding: 0px 0% 0% 10%;
+        }
+
+        #mytab1 {
+            width: 29%;
+            margin: 0px 10px 0px 5px;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            display: inline-block;
+        }
+
+        #mytab1 img {
+            height: 170px;
+            width: 307px;
+            text-align: center;
+        }
+        .phone {
+            position: fixed;
+            bottom:66px;
+            right: 10px;
+            background-color: gold;
+            border-radius: 34px 34px 34px 8px;
+            padding:10px;
+        }
+        .help {
+            position: fixed;
+            bottom:10px;
+            right: 10px;
+            color: white;
+            background-color: gold;
+            padding: 12px 26px;
+        }
+        .card-info{
+        height: 96px;
+        background: #fff;
+        padding: 22px;
+        position: relative;
+        bottom: 40px;
+        border: 1px solid #ccc;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="https://digital-lync.com/wp-content/uploads/2019/04/logo.png">
+        </div>
+        <div id="navbar">
+            <div class="navitem">Courses</div>
+            <div class="navitem">Programs</div>
+            <div class="navitem">Finishing School</div>
+            <div class="navitem">Contact Us</div>
+            <div class="navitem">
+                <button id="btn1">Get Trained</button>
+            </div>
+            <div style="font-size: 25px;background-color:gold;color:white;border-radius:30px;padding:10px;margin:-7px">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            
+        </div>
+    </div
+    <div id="banner">
+        <div id="banner-content">
+            <h1>Your Reliable Career Growth Partner</h1>
+            <p>
+                More than 5000 People opted Digital Lync for Skilling and Upskilling in
+                <br> Disruptive Technologies
+            </p>
+            <button id="btn2">Know How</button>
+        </div>
+    </div>
+    <div id="mycards">
+        <div id="mytab">
+            <div class="img1">
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/student1-150x150.png">
+            </div>
+            <div>
+                <h1>Learn From Best</h1>
+            </div>
+            <div>
+                <p>
+                    We don’t settle or let you settle for nothing less than the BEST.
+                </p>
+            </div>
+        </div>
+        <div id="mytab">
+            <div class="img1">
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/student2-150x150.png">
+            </div>
+            <div>
+                <h1>Boost Your Career</h1>
+            </div>
+            <div>
+                <p>
+                    More than 70% of the current jobs will be replaced with new Skills – Still looking for reasons to Upskill?
+                </p>
+            </div>
+        </div>
+        <div id="mytab">
+            <div class="img1">
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/student3-150x150.png">
+            </div>
+            <div>
+                <h1>Go Digital</h1>
+            </div>
+            <div>
+                <p>
+                    Don’t let your location disrupt your learning – learn by going digital
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="texthead">
+        <h1>Courses</h1>
+    </div>
+    <div id="text">
+        <p>
+            Widely Researched, Cherry Picked and Industry Approved Courses
+        </p>
+    </div>
+    <div id="mycards">
+        <div id="mytab">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/FullStack.jpg">
+                <button>More info</button>
+            </div>
+            <div class="card-info">
+                <h3 align="center">Full Stack Development</h3>
+                <div class="card-details">
+                    <span>btn</span>
+                    <span>|</span>
+                    <span>btn</span>
+                </div>
+            </div>
+        </div>
+        <div id="mytab">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/datascience-2.jpg">
+                <button>More info</button>
+            </div>
+            <div>
+                <h3 align="center">Data Science</h3>
+            </div>
+        </div>
+        <div id="mytab">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/bigdata.jpg">
+                <button>More info</button>
+            </div>
+            <div>
+                <h3 align="center">Big Data</h3>
+            </div>
+        </div>
+    </div>
+    <div id="mycards">
+        <div id="mytab">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/digital-marketing.jpg">
+                <button>More info</button>
+            </div>
+            <div>
+                <h3 align="center">Digital Marketing</h3>
+            </div>
+        </div>
+        <div id="mytab">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/DevOps.jpg">
+                <button>More info</button>
+            </div>
+            <div>
+                <h3 align="center">Devops</h3>
+            </div>
+        </div>
+        <div id="mytab">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/iot-1.jpg">
+                <button>More info</button>
+            </div>
+            <div>
+                <h3 align="center">IOT</h3>
+            </div>
+        </div>
+    </div>
+    <div id="btn3" style="text-align:center">
+        <button>View All Courses</button>
+    </div>
+    <div id="texthead1">
+        <h1>Key Features</h1>
+    </div>
+    <div id="text">
+        <p>Features to redefine your career</p>
+    </div>
+    <div id="go">
+        <div id="image">
+            <div style="margin-left:5%">
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/Key_Features.png">
+            </div>
+        </div>
+        <div>
+            <h1>Go Digital</h1>
+            <p>Don’t let your location disrupt your learning – learn by going digital</p>
+        </div>
+    </div>
+    <div>
+        <div id="content">
+            <h1>Corporate Training</h1>
+            <p>We are just a call away</p>
+            <p>
+                Stay ahead in this competitive world, have your employees and leaders upskilled. Feel free to contact us. We will ensure
+                that your team is upskilled in line with your specific needs.
+            </p>
+        </div>
+        <div id="btn4">
+            <button>Submit Request</button>
+        </div>
+        <div id="contentimg">
+            <img src="https://digital-lync.com/wp-content/themes/digilync/assets/images/corporate-training.png">
+        </div>
+    </div>
+    <div>
+        <div id="content1">
+            <h1>Life at Digital Lync</h1>
+            <p>
+                The environment at Digital Lync is colorful and creative. It is where ideas are incubated and generated. An apt place to
+                explore yourself
+            </p>
+        </div>
+        <div id="contentimg1">
+            <img src="https://digital-lync.com/wp-content/uploads/2019/04/lifeatdigital.png">
+        </div>
+    </div>
+    <div id="texthead2">
+        <h1>Happy Partners</h1>
+    </div>
+    <div id="text">
+        <p>You'll be in good company</p>
+    </div>
+    <div id="texthead3">
+        <h1>Inspiring student stories.</h1>
+    </div>
+    <div id="text">
+        <p>
+            Here are stories of real knowledge, real people, and real innovation.
+        </p>
+    </div>
+    <div id="maincontent">
+        <div id="texthead4">
+            <h1>Have a Question?</h1>
+        </div>
+        <div id="text1">
+            <p>
+                we help you go farther than you ever dreamed, 24/7.
+            </p>
+        </div>
+    </div>
+    <div id="texthead3">
+        <h1>Locations</h1>
+    </div>
+    <div id="text">
+        <p>
+            Come and chat with us about your goals over a cup of coffee
+        </p>
+    </div>
+    <div id="mycards">
+        <div id="mytab1">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/hyderabadLocation.jpg">
+            </div>
+            <div style="text-align: center">
+                <h3>Gachibowli-Hyderabad</h3>
+                <p>1st Floor, Plot No: 6-11, survey No., 40 Khajaguda, Naga Hills Rd, Madhura Nagar Colony, Gachibowli Hyderabad,
+                    Telangana 500008</p>
+                <p>Phone: +91 8688444666</p>
+            </div>
+        </div>
+        <div id="mytab1">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/hyderabadLocation.jpg">
+            </div>
+            <div style="text-align: center">
+                <h3>Kukatpally-Hyderabad</h3>
+                <p>Address: #106 & 107, Manjeera Trinity Corporate. Near Manjeera Mall, Kukatpally, Hyderabad, Telangana 500072
+                    </p>
+                <p>Phone: +91 8688444666</p>
+            </div>
+        </div>
+        <div id="mytab1">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/malaysia-location.jpg">
+            </div>
+            <div style="text-align: center">
+                <h3>Malaysia</h3>
+                <p>11, Pusat Dagang Seksyen 16 Seksyen 16, 46350 Petaling Jaya Selangor, Malaysia</p>
+                <p>Phone: +60 80112 44239</p>
+            </div>
+        </div>
+        <div id="mytab1">
+            <div>
+                <img src="https://digital-lync.com/wp-content/uploads/2019/04/usa.jpg">
+            </div>
+            <div style="text-align: center">
+                <h3>USA</h3>
+                <p>#23664, Richland Grove Dr, Ashburn, VA 20148</p>
+                <p>Phone: +1-262-997-9000</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="phone"> 
+            <img src="https://digital-lync.com/wp-content/themes/digilync/assets/images/call_o_o.png">
+        </div>
+        <div class="help">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                <span>Help</span>
+        </div>
+    </div>
+</body>
+
+</html>

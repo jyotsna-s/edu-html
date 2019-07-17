@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<style>
+		div{
+			
+		}
+		p{
+			border:2px solid;
+			border-radius:10px;
+			padding:10px;
+			display:none;
+		}
+		input:checked {
+		  box-shadow: 0 0 0 3px hotpink;
+		}
+		#d1::after{
+			content:"World";
+			display:block;
+		}
+		#d1::before{
+			content:"Praveen"
+		}
+		
+		#f1{
+			width:300px;
+			height:400px;
+			background-color:green;
+			float:left;
+		}
+		#f2::after{
+			content:" ";
+			display:block;
+			clear:both;
+		}
+		#f1:hover{
+			background-color:red;
+			transition-duration:1s;
+			transform: translateX(40px);
+		}
+		#i1{
+			width:100px;
+			height:100px;			
+			background-image:url("sachin.jpg");
+			background-size:cover;
+		}
+		#i1:hover{
+			transform:scale(0.9);
+			transition-duration:2s;
+		}
+		#d4{
+			width:100px;
+			height:100px;		
+			border:2px solid red;
+			overflow:hidden;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="d4">
+			<div id="i1"></div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id="f1"></div>
+		<h1 id="f2">Hello Praveen</h1>
+		
+		<span id="d1">Hello</span>
+	
+		<div>Lesson 1 <input type="checkbox"></div>
+		<p class="abc">
+			One One One One One One One One One One One One One One One One One One One One One 
+			One One One One One One One One One One One One One One One One One One One One One 
+			One One One One One One One One One One One One One One One One One One One One One 
+			One One One One One One One One One One One One One One One One One One One One One 
+			One One One One One One One One One One One One One One One One One One One One One 
+			One One One One One One One One One One One One One One One One One One One One One 
+			One One One One One One One One One One One One One One One One One One One One One 
+			One One One One One One One One One One One One One One One One One One One One One 
+		</p>
+		<div>Lesson 2</div>
+		<p>
+			Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two  
+			Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two  
+			Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two  
+			Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two  
+			Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two  
+			Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two  
+			Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two  
+			Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two Two  
+		</p>
+	</body>
+</html>
