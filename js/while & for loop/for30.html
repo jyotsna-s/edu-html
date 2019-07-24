@@ -1,0 +1,22 @@
+<html>
+    <script>
+        var s=0,rem,n,m=0,t;
+        n=prompt();
+        t=n;
+        while(n!=0){
+            rem=n%10;
+            m=(m*10)+rem;
+            n=parseInt(n/10);
+            s=s+rem;            
+        }
+        console.log(t);
+        console.log(m);
+        console.log(s);
+        if(t==m){
+            console.log("is a polindrome");
+        }
+        else{
+            console.log("is not a polindrome")
+        }
+    </script>
+</html>
