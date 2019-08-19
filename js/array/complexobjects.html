@@ -1,0 +1,41 @@
+<html>
+	<script>
+		var obj = 	[
+						{
+							"firstname":"praveen",
+							"lastname":"gubbala",
+							"Home-address":	{
+											"flatNo":"h10-805",
+											"location":"chitrapuri colony"
+										},
+							"Qualifiction":{
+												"graduation":"B.Tech",
+												"pg":["m.tech","M.B.A"]
+											},
+							"technologies":["PHP","Java","Javascript","c","c++"]
+							
+						},
+						{
+							"firstname":"srikanth",
+							"lastname":"gubbala",
+							"Home-address":	{
+											"flatNo":"h1325",
+											"location":"parika colony"
+										},
+							"Qualifiction":{
+												"graduation":"B.Tech",
+												"pg":[]
+											},
+							"technologies":["Unix","Java","Python"]
+							
+						}
+					]
+		for(var j=0;j<=obj.length-1;j++){
+			console.log(obj[j].firstname);
+			for(k=0;k<=obj[j].technologies.length-1;k++){
+				console.log(obj[j].technologies[k])
+
+            }	
+		}			
+	</script>
+</html>

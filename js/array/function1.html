@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+        var ar=add([12,23,10,64,27]);
+        function add(ar){
+            var s=0;
+            for(var i=0;i<=ar.length-1;i++){
+            s=s+ar[i];
+            }
+            return s;
+        }
+        console.log(ar);
+        var arr=even([12,23,10,64,27]);
+        function even(a){
+            var ar=[];
+            for(var i=0;i<=a.length-1;i++){
+             if(a[i]%2==0){
+             ar.push(a[i]);
+             }  
+            }
+            return ar;
+        }
+        console.log(even(arr));
+        var ar=min([12,23,10,64,27]);
+        function min(ar){
+            var min = Infinity;
+            for( var i=0;i<=ar.length-1;i++){
+            if(ar[i]<min){
+                min=ar[i];
+            }
+        }
+        return min;
+        }
+        console.log(ar);
+        </script>
+    </head>
+</html>
