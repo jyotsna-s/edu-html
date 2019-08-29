@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <div id="d1"></div>
+        <h1 id="d2">hello world</h1>
+        <button onclick="abc()">show</button>
+        <button onclick="xyz()">colorchange of h1</button>
+        <button onclick="showStudents()">show students</button>
+        <button onclick="showEmployees()">show employees</button>
+        <ul id="st1"></ul>
+        <ul id="emp1"></ul>
+        <script>
+            var students=['jo','honey','vijji','yash','sri','ram'];
+            var employees=[
+                {
+                    firstname:'mahesh',
+                    lastname:'babu'
+                },
+                {
+                    firstname:'pranay',
+                    lastname:'babu'
+                },
+                {
+                    firstname:'allu',
+                    lastname:'arjun'
+                },
+                {
+                    firstname:'pavan',
+                    lastname:'kalyan'
+                }
+            ]
+            function showEmployees(){
+                 for(var i=0;i<=employees.length-1;i++){
+                     var newli=document.createElement("li");
+                     var textnode=document.createTextNode(employees[i].firstname);
+                     newli.appendChild(textnode);
+                     var holder=document.getElementById("emp1");
+                     holder.appendChild(newli);
+                 }
+             }
+             function showStudents(){
+                 for(var i=0;i<=students.length-1;i++){
+                     var newli=document.createElement("li");
+                     var textnode=document.createTextNode(students[i]);
+                     newli.appendChild(textnode);
+                     var hanger=document.getElementById("st1");
+                     hanger.appendChild(newli);
+                 }
+             }
+             function abc(){
+                 document.getElementById("d1").innerHTML="Jyotsna";
+             }
+             function xyz(){
+                 document.getElementById("d2").style.color="green";   
+             }
+             var students=['jo','honey','vijji','yash','sri','ram'];
+             function showStudents(){
+                 for(var i=0;i<=students.length-1;i++){
+                     var newli=document.createElement("li");
+                     var textnode=document.createTextNode(students[i]);
+                     newli.appendChild(textnode);
+                     var hanger=document.getElementById("st1");
+                     hanger.appendChild(newli);
+                 }
+             }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="demo"></p>
+    <script>
+        class car{
+             constructor (brand){
+                 this.carname=brand;
+             }
+             present(x){
+                 return x+", I have a "+this.carname;
+             }
+         }
+         mycar=new car("Zest");
+         document.getElementById("demo").innerHTML=mycar.present("Hello");
+    </script>
+    </body>
+</html>
